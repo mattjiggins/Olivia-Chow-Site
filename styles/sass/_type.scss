@@ -1,0 +1,28 @@
+body {
+  font-family: $type-body;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $type-headline;
+  font-weight: 700;
+}
+p {
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+.lead {
+  font-family: $type-headline;
+  font-size: 1.4em;
+  font-weight: 100;
+}
+
+.serif {
+  font-family: $type-headline;
+  &.light {
+    font-weight: 100;
+  }
+}

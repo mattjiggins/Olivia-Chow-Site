@@ -1,0 +1,49 @@
+// Variables and helpers
+
+// Colours
+
+$colour-primary: #532eaf; // purple
+$colour-primary-accent: #a87cd2; // light purple
+$colour-secondary: #F4E802; //yellow
+
+$colour-white: #fff;
+$colour-textblack: #444;
+
+$colour-backgrey: #F4F4F4;
+$colour-boxgrey: #ECECEC;
+
+$colour-boxgreen: #E3F0EE;
+
+
+// Type
+
+$type-headline: "adelle", "Helvetica Neue", Arial, sans-serif;
+$type-body: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+
+// Buttons
+
+.btn-outline {
+    background-color: transparent;
+    color: inherit;
+    transition: all .5s;
+    &.btn-outline--primary {
+      border: 1px solid $colour-primary-accent;
+      color: darken($colour-primary-accent, 10%);
+      &:hover {
+        border-color: lighten($colour-primary, 15%);
+        color: lighten($colour-primary, 15%);
+      }
+    }
+
+}
+.btn-primary {
+  background-color: $colour-primary-accent;
+  border-color: $colour-primary-accent;
+  color: $colour-white;
+  &:hover {
+    background-color: $colour-primary;
+    border-color: $colour-primary;
+    color: $colour-white;
+    
+  }
+}

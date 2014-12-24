@@ -1,0 +1,150 @@
+.btn-outline {
+  background-color: transparent;
+  color: inherit;
+  transition: all .5s; }
+  .btn-outline.btn-outline--primary {
+    border: 1px solid #a87cd2;
+    color: #8f56c5; }
+    .btn-outline.btn-outline--primary:hover {
+      border-color: #7a57d3;
+      color: #7a57d3; }
+
+.btn-primary {
+  background-color: #a87cd2;
+  border-color: #a87cd2;
+  color: #fff; }
+  .btn-primary:hover {
+    background-color: #532eaf;
+    border-color: #532eaf;
+    color: #fff; }
+
+/* Flatten das boostrap */
+.well,
+.navbar-inner,
+.popover,
+.btn,
+.tooltip,
+input,
+select,
+textarea,
+pre,
+.progress,
+.modal,
+.add-on,
+.alert,
+.table-bordered,
+.nav > .active > a,
+.nav-pills > li > a,
+.dropdown-menu,
+.tooltip-inner,
+.badge,
+.label,
+.img-polaroid
+.well,
+.panel,
+.panel-heading,
+.panel-footer,
+.jumbotron,
+.thumbnail,
+.img-thumbnail,
+.input-group-addon,
+.navbar,
+.pagination li a,
+.pager li a,
+.list-group a,
+.list-group-item {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  border-radius: 0px !important;
+  border-collapse: collapse !important;
+  background-image: none !important; }
+
+body {
+  background: #F4F4F4;
+  color: #444;
+  font-size: 16px; }
+
+.callout-box {
+  margin: 20px 0px;
+  padding: 5px; }
+  .callout-box.grey {
+    background: #ECECEC; }
+  .callout-box.colour {
+    background: #E3F0EE; }
+  .callout-box .callout-box--content {
+    padding: 20px 40px 40px 40px; }
+  .callout-box h2 {
+    font-size: 2em;
+    margin: 5px 0px 5px 0px; }
+  .callout-box .lead {
+    font-size: 1em;
+    text-transform: uppercase;
+    margin: 5px 0px 20px 0px; }
+  .callout-box .buttons {
+    margin: 20px 0px; }
+    .callout-box .buttons .btn {
+      margin: 5px; }
+  .callout-box blockquote {
+    border: none !important;
+    text-align: left;
+    padding: 0px;
+    margin: 20px 0px 0px 0px; }
+    .callout-box blockquote p {
+      font-size: .8em; }
+
+body {
+  font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "adelle", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700; }
+
+p {
+  font-weight: 400; }
+
+h2 {
+  font-size: 3em; }
+
+.lead {
+  font-family: "adelle", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.4em;
+  font-weight: 100; }
+
+.serif {
+  font-family: "adelle", "Helvetica Neue", Arial, sans-serif; }
+  .serif.light {
+    font-weight: 100; }
+
+#header {
+  background: #fff;
+  color: #532eaf;
+  padding: 50px 0px;
+  text-align: center;
+  border-bottom: 4px solid #F4E802; }
+  #header h1 {
+    font-size: 4em; }
+  #header p {
+    font-size: 1.2em; }
+  #header .social {
+    margin-top: 20px; }
+    #header .social a {
+      color: #8a6bd8;
+      margin: 5px; }
+      #header .social a:hover {
+        color: #532eaf; }
+
+#main-content {
+  padding: 10px 0px; }
+
+#bio {
+  background: #ECECEC;
+  padding: 5px; }
+  #bio .photo {
+    margin-top: 60px; }
+  #bio .biography {
+    padding: 20px 40px 40px 40px; }
+  #bio .biography--content {
+    max-width: 600px; }

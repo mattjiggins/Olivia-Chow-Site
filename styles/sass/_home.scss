@@ -1,0 +1,44 @@
+#header {
+  background: $colour-white;
+  color: $colour-primary;
+  padding: 50px 0px;
+  text-align: center;
+  border-bottom: 4px solid $colour-secondary;
+  h1 {
+    font-size: 4em;
+  }
+  p {
+    font-size: 1.2em;
+  }
+  .social {
+    margin-top: 20px;
+    a{
+      color: lighten($colour-primary,20%);
+      margin: 5px;
+      &:hover {
+        color: $colour-primary;
+      }
+    }
+      
+  }
+}
+
+#main-content {
+  padding: 10px 0px;
+}
+
+#bio {
+  
+  background: $colour-boxgrey;
+//   margin: 20px 0px;
+  padding: 5px;
+  .photo {
+    margin-top: 60px;
+  }
+  .biography {
+    padding: 20px 40px 40px 40px;
+  }  
+  .biography--content {
+    max-width: 600px;
+  }
+}

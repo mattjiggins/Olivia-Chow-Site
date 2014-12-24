@@ -1,0 +1,45 @@
+body {
+  background: $colour-backgrey;
+  color: $colour-textblack;
+  font-size: 16px;
+}
+
+.callout-box {
+  
+  margin: 20px 0px;
+  padding: 5px;
+  
+  &.grey {
+    background: $colour-boxgrey;
+  }
+  &.colour {
+    background: $colour-boxgreen;
+  }
+  
+  .callout-box--content {
+    padding: 20px 40px 40px 40px;
+  }
+  h2 {
+    font-size: 2em;
+    margin: 5px 0px 5px 0px;
+  }
+  .lead {
+    font-size: 1em;
+    text-transform: uppercase;
+    margin: 5px 0px 20px 0px;
+  }
+  .buttons {
+    margin: 20px 0px;
+    .btn {
+      margin: 5px;
+    }
+  }
+  blockquote {
+    border: none !important;
+    text-align: left;
+    padding: 0px;
+    margin: 20px 0px 0px 0px;
+    p {font-size: .8em;}
+    
+  }
+}

@@ -1,0 +1,45 @@
+/* Flatten das boostrap */
+.well, 
+.navbar-inner, 
+.popover, 
+.btn, 
+.tooltip, 
+input, 
+select, 
+textarea, 
+pre, 
+.progress, 
+.modal, 
+.add-on, 
+.alert, 
+.table-bordered, 
+.nav>.active>a,
+.nav-pills > li > a,
+.dropdown-menu, 
+.tooltip-inner, 
+.badge, 
+.label, 
+.img-polaroid
+.well,
+.panel,
+.panel-heading,
+.panel-footer,
+.jumbotron,
+.thumbnail,
+.img-thumbnail,
+.input-group-addon,
+.navbar,
+.pagination li a,
+.pager li a,
+.list-group a,
+.list-group-item,
+{
+  -moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	-webkit-border-radius: 0px !important;
+	-moz-border-radius: 0px !important;
+	border-radius: 0px !important;
+	border-collapse: collapse !important;
+	background-image: none !important;
+}
