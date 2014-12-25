@@ -95,6 +95,9 @@ body {
     .callout-box blockquote p {
       font-size: .8em; }
 
+#app-twitterfeed {
+  font-size: .9em; }
+
 body {
   font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif; }
 
@@ -123,7 +126,7 @@ h2 {
   color: #532eaf;
   padding: 50px 0px;
   text-align: center;
-  border-bottom: 4px solid #F4E802; }
+  border-top: 10px solid #F4E802; }
   #header h1 {
     font-size: 4em; }
   #header p {

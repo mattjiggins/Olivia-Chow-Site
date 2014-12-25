@@ -69,18 +69,28 @@
 		<div class="container">
 			<div class="biography">
 				
-				<div class="photo col-sm-3 col-xs-4 pull-right">
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="biography--content">
+							<h2>Quis nostrud Olivia exercitation</h2>
+							<p class="lead">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p><a href="" class="btn btn-outline btn-outline--primary">Full Biography</a></p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div id="app-twitterfeed"></div>
+						<p><a href="" class="btn btn-sm btn-outline btn-outline--primary">Follow on twitter</a></p>
+					</div>
+				</div>
+				
+				<!-- <div class="photo col-sm-3 col-xs-4 pull-right">
 					<img src="images/OliviaChow0-Summer.jpg" class="img-responsive thumbnail" alt="OliviaChow0 Summer">
-				</div>
+				</div> -->
 		
-				<div class="biography--content">
-					<h2>Quis nostrud Olivia exercitation</h2>
-					<p class="lead">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p><a href="" class="btn btn-outline btn-outline--primary">Full Biography</a></p>
-				</div>
+				
 				
 			</div>
 
@@ -139,7 +149,16 @@
 								<a href="" class="btn btn-outline btn-outline--primary">Instagram</a>
 							</div>							
 						</div>
-					</div>
+					</div> <!-- /callout box -->
+					
+					<div class="callout-box grey">
+						<div class="callout-box--content">
+							
+							
+
+							
+						</div>
+					</div> <!-- /callout box -->
 					
 				</div>
 				
@@ -148,8 +167,38 @@
 
 	</section>
 	
+	<script id="app-tweets" type="text/x-handlebars-template">
+		<div class="tweet">
+			<p>{{{formatTweet text}}}
+				{{#if entities.media}}
+					{{#each entities.media}}
+						<a href="{{media_url}}" target="_blank"><i class="fa fa-camera-retro"></i></a> 
+					{{/each}}
+				{{/if}}
+				<br>
+				<a href="http://twitter.com/{{user.screen_name}}/status/{{id_str}}"><i class="fa fa-retweet"></i></a> &mdash; <small>{{dateFormat created_at}}</small>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+				<br>				
+			</p>
+		</div>
+
+	</script>
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js" type="text/javascript"></script>
+
+	<script src="/scripts/min/application-min.js" type="text/javascript"></script>
+	
+	
+
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    app = new AppRouter();
+		    Backbone.history.start({pushState: false});
+		});
+	</script>
+
 </body>
 </html>
