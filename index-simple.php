@@ -26,7 +26,7 @@
 <!-- Styles -->
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-	<link href="styles/css/application.css" rel="stylesheet" type="text/css" media="screen">
+	<link href="styles/css/application-new.css" rel="stylesheet" type="text/css" media="screen">
 
 <!-- TypeKit Goodness -->
 	<script src="//use.typekit.net/oau0xfl.js"></script>
@@ -122,95 +122,107 @@
 	
 	
 	<div class="content">
-	<div class="inset">
-		<div class="colour"></div>
-	</div>
-	
-	<div class="row root">
-		<div class="col-sm-5">	
-			<div id="app-twitterfeed-1"></div>
-		</div>
-		<div class="col-sm-7 right">
-				<div class="row">
-					<div class="col-sm-8">
-						<div class="biography">
-							<h1>Olivia Chow</h1>
+		
+		
+		<section id="lead" class="text-center">
+			<img src="images/OliviaChow-Photo.jpg" class="photo  img-circle" alt="Olivia Chow">
 
+			<h1>Olivia Chow</h1>
+		
+			<div class="social-icons text-center">
+				<a href="https://twitter.com/intent/user?screen_name=oliviachow" tabindex="1"><span class="fa-stack fa-md"><i class="fa fa-circle-thin fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x"></i></span></a>
+				<a href="https://www.facebook.com/OliviaChowTO" tabindex="2"><span class="fa-stack fa-md"><i class="fa fa-circle-thin fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x"></i></span></a>
+				<a href="https://www.youtube.com/user/chowolivia" tabindex="3"><span class="fa-stack fa-md"><i class="fa fa-circle-thin fa-stack-2x"></i><i class="fa fa-youtube fa-stack-1x"></i></span></a>
+				<a href="https://www.instagram.com/oliviachow" tabindex="4"><span class="fa-stack fa-md"><i class="fa fa-circle-thin fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x"></i></span></a>
+			</div> <!-- /social -->
+		</section>
+		
+		
+		<section id="content-biography">
+			
+			<div class="container-narrow">
+				<div class="row biography">
+					<div class="col-sm-6">
 							<p class="lead">In a political career that began in 1985, Olivia Chow has been one of Toronto's most effective leaders – on the Board of Education, at Toronto City Hall, in Parliament, and on the national stage.</p>
-
+					</div>
+					<div class="col-sm-6">
 							<p>Olivia was born in Hong Kong in 1957, grew up in Toronto, studied philosophy and art. She worked as a college professor, an ESL teacher, counselor for new immigrants and a sculptor.</p>
 
 							<p><a href="#" class="btn btn-sm btn-outline btn-outline--textblack" data-toggle="modal" data-target="#fullBiography">Full Biography</a></p>
-						</div>
-
-
-
-					</div><!-- /column8 -->
-					<div class="col-sm-4">
-						<img src="images/OliviaChow0-Summer.jpg" class="photo img-responsive img-circle" alt="Olivia Chow">
-						
-						<div class="social-icons text-center">
-							<a href="https://twitter.com/intent/user?screen_name=oliviachow" tabindex="1"><span class="fa-stack fa-md"><i class="fa fa-circle-thin fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x"></i></span></a>
-							<a href="https://www.facebook.com/OliviaChowTO" tabindex="2"><span class="fa-stack fa-md"><i class="fa fa-circle-thin fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x"></i></span></a>
-							<a href="https://www.youtube.com/user/chowolivia" tabindex="3"><span class="fa-stack fa-md"><i class="fa fa-circle-thin fa-stack-2x"></i><i class="fa fa-youtube fa-stack-1x"></i></span></a>
-							<a href="https://www.instagram.com/oliviachow" tabindex="4"><span class="fa-stack fa-md"><i class="fa fa-circle-thin fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x"></i></span></a>
-						</div> <!-- /social -->
-						
-						
-					</div> <!-- /column4 -->
-				</div> <!-- /row -->
-
+					</div>
+				</div>
+				
+			</div>
 			
-			<!-- START BOOK -->
-						<div class="callout-box grey">
-							<div class="callout-box--content text-center">
-								<p class="lead">Olivia's Book</p>
-								<div class="row">
-									<div class="col-xs-4">
-										<img src="images/bookCover-web.jpg" class="img-responsive" alt="BookCover Web">
-									</div>
-
-									<div class="col-xs-8">
-
-										<h2>My Journey</h2>
-
-										<div class="buttons">
-											<a href="" class="btn btn-outline btn-outline--primary">More Info</a>
-											<a href="" class="btn btn-primary">Purchase</a>
+			
+			
+		</section>
+		
+		<section id="content-twitter">
+			<div class="container-narrow">
+				<div class="row">
+					<div class="col-sm-6">
+						<div id="app-twitterfeed-1"></div>
+					</div>
+					<div class="col-sm-6">
+						<!-- START BOOK -->
+							<div class="callout-box grey">
+								<div class="callout-box--content text-center">
+									<p class="lead">Olivia's Memoir</p>
+									<div class="row">
+										<div class="col-xs-4">
+											<img src="images/bookCover-web.jpg" class="img-responsive" alt="BookCover Web">
 										</div>
 
-										<p class="serif light">Olivia Chow—Member of Parliament, seasoned politician and widow of former New Democratic Party leader Jack Layton—tells her story in this candid memoir.</p>
-
-										<blockquote>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-											<footer><cite title="Source Title">Source Title</cite></footer>
-										</blockquote>
+										<div class="col-xs-8">
+											<h2>My Journey</h2>
+											<div class="buttons">
+												<a href="" class="btn btn-outline btn-outline--primary">More Info</a>
+												<a href="" class="btn btn-primary">Purchase</a>
+											</div>
+										</div>
 									</div>
-
+									<p class="description">Olivia Chow—Member of Parliament, seasoned politician and widow of former New Democratic Party leader Jack Layton—tells her story in this candid memoir.</p>
+		
 
 								</div>
-
-										
-
 							</div>
-						</div>
-			<!-- /END BOOK -->
+						<!-- /END BOOK -->
+						<!-- START BOOK -->
+							<div class="callout-box grey">
+								<div class="callout-box--content text-center">
+									<p class="lead">Olivia's Instagram</p>
+									<img src="images/chowInstagram-horiz.jpg" class="img-responsive" alt="ChowInstagram Horiz">
+	
+								</div>
+							</div>
+						<!-- /END BOOK -->						
+						
+						
+						<div class="callout-box grey">
+							<div class="callout-box--content  text-center">
+								<p class="lead">Contact Olivia</p>
+								<div class="buttons">
+									<a href="" class="btn btn-outline btn-outline--primary">Twitter</a>
+									<a href="" class="btn btn-outline btn-outline--primary">Email</a>
+									<a href="" class="btn btn-outline btn-outline--primary">Facebook</a>
+									<a href="" class="btn btn-outline btn-outline--primary">Youtube</a>
+									<a href="" class="btn btn-outline btn-outline--primary">Instagram</a>
+								</div>							
+							</div>
+						</div> <!-- /callout box -->
+					</div>
+				</div>
+				
+			</div>
+		</section>
 			
-			<img src="images/chowInstagram.jpg" class="img-responsive" alt="ChowInstagram">
+			
+			
+			
 
 
-					<div class="callout-box grey">
-						<div class="callout-box--content  text-center">
-							<p class="lead">Contact Olivia</p>
-							<div class="buttons">
-								<a href="" class="btn btn-outline btn-outline--primary">Twitter</a>
-								<a href="" class="btn btn-outline btn-outline--primary">Email</a>
-								<a href="" class="btn btn-outline btn-outline--primary">Facebook</a>
-								<a href="" class="btn btn-outline btn-outline--primary">Youtube</a>
-								<a href="" class="btn btn-outline btn-outline--primary">Instagram</a>
-							</div>							
-						</div>
-					</div> <!-- /callout box -->
+					
 
 			
 		</div>

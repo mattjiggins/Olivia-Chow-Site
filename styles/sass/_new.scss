@@ -1,25 +1,107 @@
+.container-narrow {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-#top {
+
+#lead {
+  background: $colour-primary;
+  color: $colour-white;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   h1 {
-    margin: 0px;
+    font-size: 4em;
+  }
+  .photo {
+    width: 250px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .social-icons {
+    margin-bottom: 20px;
+    a {
+      color: $colour-white;
+    }
+  }
+  
+}
+
+#content-biography {
+  padding: 20px 0px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  .biography {
+    font-size: 1.2em;
+    text-align: justify;
+  }
+  .lead {font-size: 1.2em;}
+  .tweets {
+    padding-top: 20px;
+    font-size: 1.2em;
   }
 }
-#banner-photo {
-  max-height: 430px;
-  overflow: hidden;
-}
 
-#main-content {
-  padding-top: 30px;
-}
-
-.biography {
-  text-align: justify;
-  p { font-size: 1.1em; }
-}
-
-.twitter {
+#content-twitter {
   font-size: 1.2em;
+//   font-family: $type-headline;
 }
+
+#fullBiography {
+  .modal-dialog {
+    width: 90%;
+  }
+  .biography-content {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+.callout-box {
+  padding: 5px;
+  margin-top: -10px;
+  margin-bottom: 40px;
+  &.grey {
+    background: $colour-boxgrey;
+  }
+  &.colour {
+    background: $colour-boxgreen;
+  }
+  
+  .callout-box--content {
+    padding: 5px 10px;
+  }
+  h2 {
+    font-size: 1.8em;
+    margin: 5px 0px 5px 0px;
+  }
+  .lead {
+    font-size: .9em;
+    text-transform: uppercase;
+    margin: 5px 0px 20px 0px;
+  }
+  .description {
+    text-align: justify;
+    font-size: .8em;
+    margin-top: 10px;
+  }
+  .buttons {
+    margin: 30px 0px;
+    .btn {
+      margin: 5px;
+    }
+  }
+  blockquote {
+    border: none !important;
+    text-align: left;
+    padding: 0px;
+    margin: 20px 0px 0px 0px;
+    p {font-size: .8em;}
+    
+  }
+}
+
+

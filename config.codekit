@@ -73,6 +73,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/chowInstagram-horiz.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 50215,
+		"inputAbbreviatedPath": "\/images\/chowInstagram-horiz.jpg",
+		"outputAbbreviatedPath": "\/images\/chowInstagram-horiz.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/chowInstagram.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -80,6 +91,17 @@
 		"initialSize": 52234,
 		"inputAbbreviatedPath": "\/images\/chowInstagram.jpg",
 		"outputAbbreviatedPath": "\/images\/chowInstagram.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/OliviaChow-Photo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19952,
+		"inputAbbreviatedPath": "\/images\/OliviaChow-Photo.jpg",
+		"outputAbbreviatedPath": "\/images\/OliviaChow-Photo.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -149,6 +171,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/index-big-photo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/index-simple.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index-simple.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

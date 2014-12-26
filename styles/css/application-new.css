@@ -68,26 +68,83 @@ pre,
   border-collapse: collapse !important;
   background-image: none !important; }
 
-#top {
+.container-narrow {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto; }
+
+#lead {
+  background: #532eaf;
+  color: #fff;
   padding-top: 20px;
-  padding-bottom: 20px; }
-  #top h1 {
-    margin: 0px; }
+  padding-bottom: 10px; }
+  #lead h1 {
+    font-size: 4em; }
+  #lead .photo {
+    width: 250px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto; }
+  #lead .social-icons {
+    margin-bottom: 20px; }
+    #lead .social-icons a {
+      color: #fff; }
 
-#banner-photo {
-  max-height: 430px;
-  overflow: hidden; }
+#content-biography {
+  padding: 20px 0px;
+  margin-top: 10px;
+  margin-bottom: 30px; }
+  #content-biography .biography {
+    font-size: 1.2em;
+    text-align: justify; }
+  #content-biography .lead {
+    font-size: 1.2em; }
+  #content-biography .tweets {
+    padding-top: 20px;
+    font-size: 1.2em; }
 
-#main-content {
-  padding-top: 30px; }
-
-.biography {
-  text-align: justify; }
-  .biography p {
-    font-size: 1.1em; }
-
-.twitter {
+#content-twitter {
   font-size: 1.2em; }
+
+#fullBiography .modal-dialog {
+  width: 90%; }
+#fullBiography .biography-content {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.callout-box {
+  padding: 5px;
+  margin-top: -10px;
+  margin-bottom: 40px; }
+  .callout-box.grey {
+    background: #ECECEC; }
+  .callout-box.colour {
+    background: #E3F0EE; }
+  .callout-box .callout-box--content {
+    padding: 5px 10px; }
+  .callout-box h2 {
+    font-size: 1.8em;
+    margin: 5px 0px 5px 0px; }
+  .callout-box .lead {
+    font-size: .9em;
+    text-transform: uppercase;
+    margin: 5px 0px 20px 0px; }
+  .callout-box .description {
+    text-align: justify;
+    font-size: .8em;
+    margin-top: 10px; }
+  .callout-box .buttons {
+    margin: 30px 0px; }
+    .callout-box .buttons .btn {
+      margin: 5px; }
+  .callout-box blockquote {
+    border: none !important;
+    text-align: left;
+    padding: 0px;
+    margin: 20px 0px 0px 0px; }
+    .callout-box blockquote p {
+      font-size: .8em; }
 
 body {
   font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif; }
