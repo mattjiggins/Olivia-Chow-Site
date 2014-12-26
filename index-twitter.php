@@ -156,8 +156,6 @@
 							<a href="https://www.instagram.com/oliviachow" tabindex="4"><span class="fa-stack fa-md"><i class="fa fa-circle-thin fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x"></i></span></a>
 						</div> <!-- /social -->
 						
-						
-						<a href="" class="btn btn-default btn-block">Olivia's book</a>
 						<a href="" class="btn btn-default btn-block">Receipt Questions</a>
 						
 					</div> <!-- /column4 -->
