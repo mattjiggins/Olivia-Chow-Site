@@ -1,0 +1,113 @@
+.btn-outline {
+  background-color: transparent;
+  color: inherit;
+  transition: all .5s; }
+  .btn-outline.btn-outline--primary {
+    border: 1px solid #a87cd2;
+    color: #8f56c5; }
+    .btn-outline.btn-outline--primary:hover {
+      border-color: #7a57d3;
+      color: #7a57d3; }
+  .btn-outline.btn-outline--textblack {
+    border: 1px solid #444;
+    color: #2b2b2b; }
+    .btn-outline.btn-outline--textblack:hover {
+      border-color: #6a6a6a;
+      color: #6a6a6a; }
+
+.btn-primary {
+  background-color: #a87cd2;
+  border-color: #a87cd2;
+  color: #fff; }
+  .btn-primary:hover {
+    background-color: #532eaf;
+    border-color: #532eaf;
+    color: #fff; }
+
+/* Flatten das boostrap */
+.well,
+.navbar-inner,
+.popover,
+.btn,
+.tooltip,
+input,
+select,
+textarea,
+pre,
+.progress,
+.modal,
+.add-on,
+.alert,
+.table-bordered,
+.nav > .active > a,
+.nav-pills > li > a,
+.dropdown-menu,
+.tooltip-inner,
+.badge,
+.label,
+.img-polaroid
+.well,
+.panel,
+.panel-heading,
+.panel-footer,
+.jumbotron,
+.thumbnail,
+.img-thumbnail,
+.input-group-addon,
+.navbar,
+.pagination li a,
+.pager li a,
+.list-group a,
+.list-group-item {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  border-radius: 0px !important;
+  border-collapse: collapse !important;
+  background-image: none !important; }
+
+#top {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  #top h1 {
+    margin: 0px; }
+
+#banner-photo {
+  max-height: 430px;
+  overflow: hidden; }
+
+#main-content {
+  padding-top: 30px; }
+
+.biography {
+  text-align: justify; }
+  .biography p {
+    font-size: 1.1em; }
+
+.twitter {
+  font-size: 1.2em; }
+
+body {
+  font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "adelle", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700; }
+
+p {
+  font-weight: 400; }
+
+h2 {
+  font-size: 3em; }
+
+.lead {
+  font-family: "adelle", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.4em;
+  font-weight: 100; }
+
+.serif {
+  font-family: "adelle", "Helvetica Neue", Arial, sans-serif; }
+  .serif.light {
+    font-weight: 100; }

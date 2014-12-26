@@ -4,7 +4,7 @@
 
 $colour-primary: #532eaf; // purple
 $colour-primary-accent: #a87cd2; // light purple
-$colour-secondary: #F4E802; //yellow
+$colour-secondary: #efe106; //yellow
 
 $colour-white: #fff;
 $colour-textblack: #444;
@@ -34,7 +34,14 @@ $type-body: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
         color: lighten($colour-primary, 15%);
       }
     }
-
+    &.btn-outline--textblack {
+      border: 1px solid $colour-textblack;
+      color: darken($colour-textblack, 10%);
+      &:hover {
+        border-color: lighten($colour-textblack, 15%);
+        color: lighten($colour-textblack, 15%);
+      }
+    }
 }
 .btn-primary {
   background-color: $colour-primary-accent;

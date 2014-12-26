@@ -1,7 +1,36 @@
 body {
-  background: $colour-backgrey;
+ // background: $colour-backgrey;
   color: $colour-textblack;
   font-size: 16px;
+}
+
+.content {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  .row.root {
+    margin: 0px;
+    .right {
+      padding-right: 60px;
+    }
+  }
+}
+
+.inset {
+//   background: lighten($colour-secondary,20%);
+  position: fixed;
+  top: 40px; right: 40px; bottom: 40px; left: 40px;
+}
+
+.col-xs-6.col-md-3{
+  .thumbnail {border-top: 2px solid purple}
+  
+} 
+
+.callout-wirebox {
+  border: 1px solid $colour-textblack;
+  margin: 20px 0px;
+  padding: 20px 60px;
 }
 
 .callout-box {

@@ -1,3 +1,72 @@
+.tweet-image {
+  max-width: 100px
+}
+
+.tweets {
+  background: lighten($colour-secondary,20%);
+  padding: 70px 50px 20px 80px;
+  margin-left: -20px;
+}
+.tweet {
+  clear: both;
+  display: block;
+  margin-bottom: 35px;
+  font-size: 1.2em;
+  font-family: $type-headline;
+  a {
+    color: $colour-textblack;
+    border-bottom: 1px dotted $colour-textblack;
+    text-decoration: none;
+    &:hover{
+      background: $colour-primary-accent;
+      color: white;
+    }
+    &.action {
+      border-bottom: none;
+      text-decoration: none;
+      &:hover{
+        background: transparent;
+        color: $colour-primary;
+      }
+    }
+  }
+}
+.biography {
+  padding-top: 25px;
+  margin-bottom: 50px;
+  h1 {
+    color: $colour-primary;
+    font-size: 4.3em;
+    margin-bottom: 20px;
+  }
+  .lead { color: $colour-primary; }
+  p {
+    line-height: 1.6em;
+    text-align: justify;
+  }
+
+}
+.photo {
+  margin-top: 30px;
+}
+
+#fullBiography {
+  .modal-dialog {
+    width: 90%;
+  }
+  .biography-content {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.social-icons {
+  a {color: $colour-primary;}
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 #header {
   background: $colour-white;
   color: $colour-primary;

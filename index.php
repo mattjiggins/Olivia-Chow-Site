@@ -81,7 +81,7 @@
 						</div>
 					</div>
 					<div class="col-sm-4">
-						<div id="app-twitterfeed"></div>
+						<div id="app-twitterfeed-1"></div>
 						<p><a href="" class="btn btn-sm btn-outline btn-outline--primary">Follow on twitter</a></p>
 					</div>
 				</div>

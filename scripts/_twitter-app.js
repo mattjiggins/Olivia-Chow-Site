@@ -22,12 +22,22 @@ Backbone.View = Backbone.View.extend({
 // MODELS
 
 Tweets = Backbone.Model.extend({
-    urlRoot:"/inc/tweets.php"
+    urlRoot:"/inc/tweets.php",
+    state: {
+      pageSize: 5,
+      // sortKey: "date",
+      // order: 1
+    }
 });
 
-TweetsCollection = Backbone.Collection.extend({
+TweetsCollection = Backbone.PageableCollection.extend({
     model:Tweets,
-    url:"/inc/tweets.php"
+    url:"/inc/tweets.php",
+    state: {
+      pageSize: 5,
+      // sortKey: "date",
+      // order: 1
+    }
 });
 
 
@@ -68,7 +78,8 @@ var AppRouter = Backbone.Router.extend({
 			success:function () {
 				var tweets = app.tweetList;				
 				console.log(tweets.length);
-				app.showView('#app-twitterfeed', new TweetView({model:tweets}));
+				app.showView('#app-twitterfeed-2', new TweetView({model:tweets}));
+				app.showView('#app-twitterfeed-1', new TweetView({model:tweets}));
 			},
 			error:function(){
 				console.log("Error");
