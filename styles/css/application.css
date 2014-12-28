@@ -69,27 +69,27 @@ pre,
   background-image: none !important; }
 
 body {
-  color: #444;
-  font-size: 16px; }
+  font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif; }
 
-.content {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto; }
-  .content .row.root {
-    margin: 0px; }
-    .content .row.root .right {
-      padding-right: 60px; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: "adelle", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700; }
 
-.inset {
-  position: fixed;
-  top: 40px;
-  right: 40px;
-  bottom: 40px;
-  left: 40px; }
+p {
+  font-weight: 400; }
 
-.col-xs-6.col-md-3 .thumbnail {
-  border-top: 2px solid purple; }
+h2 {
+  font-size: 3em; }
+
+.lead {
+  font-family: "adelle", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.4em;
+  font-weight: 100; }
+
+.serif {
+  font-family: "adelle", "Helvetica Neue", Arial, sans-serif; }
+  .serif.light {
+    font-weight: 100; }
 
 .callout-wirebox {
   border: 1px solid #444;
@@ -124,37 +124,10 @@ body {
     .callout-box blockquote p {
       font-size: .8em; }
 
-#app-twitterfeed {
-  font-size: .9em; }
-
-body {
-  font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "adelle", "Helvetica Neue", Arial, sans-serif;
-  font-weight: 700; }
-
-p {
-  font-weight: 400; }
-
-h2 {
-  font-size: 3em; }
-
-.lead {
-  font-family: "adelle", "Helvetica Neue", Arial, sans-serif;
-  font-size: 1.4em;
-  font-weight: 100; }
-
-.serif {
-  font-family: "adelle", "Helvetica Neue", Arial, sans-serif; }
-  .serif.light {
-    font-weight: 100; }
-
 .tweet-image {
   max-width: 100px; }
 
 .tweets {
-  background: #fbf260;
   padding: 70px 50px 20px 80px;
   margin-left: -20px; }
 
@@ -178,21 +151,41 @@ h2 {
         background: transparent;
         color: #532eaf; }
 
+body {
+  color: #444;
+  font-size: 16px; }
+
+.content {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto; }
+  .content .row.root {
+    margin: 0px; }
+    .content .row.root .right {
+      padding-right: 60px; }
+
+#left {
+  background: #fbf260; }
+
+#right {
+  padding: 30px 0px 0px 40px; }
+  #right .callout-box--content {
+    padding-right: 80px; }
+
 .biography {
-  padding-top: 25px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  padding: 0px 80px 0px 0px; }
   .biography h1 {
     color: #532eaf;
     font-size: 4.3em;
     margin-bottom: 20px; }
-  .biography .lead {
-    color: #532eaf; }
-  .biography p {
-    line-height: 1.6em;
-    text-align: justify; }
-
-.photo {
-  margin-top: 30px; }
+  .biography .photo {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-height: 250px;
+    max-width: 250px; }
 
 #fullBiography .modal-dialog {
   width: 90%; }
@@ -207,33 +200,5 @@ h2 {
   .social-icons a {
     color: #532eaf; }
 
-#header {
-  background: #fff;
-  color: #532eaf;
-  padding: 50px 0px;
-  text-align: center;
-  border-top: 10px solid #efe106; }
-  #header h1 {
-    font-size: 4em; }
-  #header p {
-    font-size: 1.2em; }
-  #header .social {
-    margin-top: 20px; }
-    #header .social a {
-      color: #8a6bd8;
-      margin: 5px; }
-      #header .social a:hover {
-        color: #532eaf; }
-
-#main-content {
-  padding: 10px 0px; }
-
-#bio {
-  background: #ECECEC;
-  padding: 5px; }
-  #bio .photo {
-    margin-top: 60px; }
-  #bio .biography {
-    padding: 20px 40px 40px 40px; }
-  #bio .biography--content {
-    max-width: 600px; }
+#app-twitterfeed {
+  font-size: .9em; }

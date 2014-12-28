@@ -1,5 +1,4 @@
 body {
- // background: $colour-backgrey;
   color: $colour-textblack;
   font-size: 16px;
 }
@@ -16,62 +15,53 @@ body {
   }
 }
 
-.inset {
-//   background: lighten($colour-secondary,20%);
-  position: fixed;
-  top: 40px; right: 40px; bottom: 40px; left: 40px;
+#left {
+  background: lighten($colour-secondary,20%);
 }
-
-.col-xs-6.col-md-3{
-  .thumbnail {border-top: 2px solid purple}
-  
-} 
-
-.callout-wirebox {
-  border: 1px solid $colour-textblack;
-  margin: 20px 0px;
-  padding: 20px 60px;
-}
-
-.callout-box {
-  
-  margin: 20px 0px;
-  padding: 5px;
-  
-  &.grey {
-    background: $colour-boxgrey;
-  }
-  &.colour {
-    background: $colour-boxgreen;
-  }
-  
+#right {
+  padding: 30px 0px 0px 40px;
   .callout-box--content {
-    padding: 20px 40px 40px 40px;
-  }
-  h2 {
-    font-size: 2em;
-    margin: 5px 0px 5px 0px;
-  }
-  .lead {
-    font-size: 1em;
-    text-transform: uppercase;
-    margin: 5px 0px 20px 0px;
-  }
-  .buttons {
-    margin: 20px 0px;
-    .btn {
-      margin: 5px;
-    }
-  }
-  blockquote {
-    border: none !important;
-    text-align: left;
-    padding: 0px;
-    margin: 20px 0px 0px 0px;
-    p {font-size: .8em;}
-    
+    padding-right: 80px;
   }
 }
+
+.biography {
+  
+  margin-bottom: 50px;
+  padding: 0px 80px 0px 0px;
+  h1 {
+    color: $colour-primary;
+    font-size: 4.3em;
+    margin-bottom: 20px;
+  }
+  .photo {
+    margin-top: 30px;
+    margin-left: auto; margin-right: auto;
+    width: 100%;
+    max-height: 250px;
+    max-width: 250px;
+  }
+}
+
+
+#fullBiography {
+  .modal-dialog {
+    width: 90%;
+  }
+  .biography-content {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.social-icons {
+  a {color: $colour-primary;}
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
 
 #app-twitterfeed {
   font-size: .9em;
