@@ -1,0 +1,32 @@
+.tweet-image {
+  max-width: 100px
+}
+
+.tweets {
+  padding: 70px 50px 20px 80px;
+  margin-left: -20px;
+}
+.tweet {
+  clear: both;
+  display: block;
+  margin-bottom: 35px;
+  font-size: 1.2em;
+  font-family: $type-headline;
+  a {
+    color: $colour-textblack;
+    border-bottom: 1px dotted $colour-textblack;
+    text-decoration: none;
+    &:hover{
+      background: $colour-primary-accent;
+      color: white;
+    }
+    &.action {
+      border-bottom: none;
+      text-decoration: none;
+      &:hover{
+        background: transparent;
+        color: $colour-primary;
+      }
+    }
+  }
+}

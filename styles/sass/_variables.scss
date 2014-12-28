@@ -54,3 +54,49 @@ $type-body: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
     
   }
 }
+
+
+// RESPONSIVE HELPERS
+
+@mixin respond-to($media) {
+    /* Landscape phones and down */
+    @if $media == phone {
+        @media (max-width: 480px) { @content; }
+    }
+    /* Landscape phone to portrait tablet */
+    @else if $media == tablet-portrait {
+        @media (max-width: 767px) {@content; }
+    }
+    /* Portrait tablet to landscape and desktop */
+    @else if $media == tablet-landscape-desktop {
+        @media (min-width: 768px) and (max-width: 991px) { @content; }
+    }
+    /* Phone to small desktop */
+    @else if $media == small-desktop {
+        @media (max-width: 991px) { @content; }
+    }
+    /* Large desktop */
+    @else if $media == desktop {
+        @media (min-width: 992px) { @content; }
+    }
+    /* Smaller than Large desktop */
+    @else if $media == large-desktop-smaller {
+        @media (max-width: 1200px) { @content; }
+    }
+    /* Large desktop */
+    @else if $media == large-desktop {
+        @media (min-width: 1200px) { @content; }
+    }
+    // Non-Retina
+    @else if $media == non-retina {
+        @media screen and (-webkit-max-device-pixel-ratio: 1) { @content; }
+    }
+    // Retina Only
+    @else if $media == retina {
+        @media screen and (-webkit-min-device-pixel-ratio: 2) { @content; }
+    }
+    // Specific max width
+    @else {
+        @media only screen and (max-width: #{$media}px) { @content; }
+    }
+}

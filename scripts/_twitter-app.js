@@ -1,44 +1,34 @@
-Backbone.View.prototype.close = function () {
-    console.log('Closing view ' + this);
-    if (this.beforeClose) {
-        this.beforeClose();
-    }
-    this.remove();
-    this.unbind();
-};
-
-// Override View.remove()'s default behavior
-Backbone.View = Backbone.View.extend({
-	remove: function() {
-		// Empty the element and remove it from the DOM while preserving events
-		$(this.el).empty().detach();
-
-		return this;
-	}
-});
-
-
-
 // MODELS
 
-Tweets = Backbone.Model.extend({
-    urlRoot:"/inc/tweets.php",
-    state: {
-      pageSize: 5,
-      // sortKey: "date",
-      // order: 1
-    }
+Tweets = Backbone.Model.extend({});
+
+TweetsCollection = Backbone.Collection.extend({
+    model:Tweets,
+    url:"/inc/tweets.php"
 });
 
-TweetsCollection = Backbone.PageableCollection.extend({
-    model:Tweets,
-    url:"/inc/tweets.php",
-    state: {
-      pageSize: 5,
-      // sortKey: "date",
-      // order: 1
-    }
-});
+tweets = new TweetsCollection([
+  // Bootstrap all the records for all the pages here
+], { mode: "client" });
+
+// VIEWS
+
+// TweetView = Backbone.View.extend({
+// 	className: 'tweets',
+//
+// 	template: Handlebars.compile($("#app-tweets").html()),
+//
+//     initialize:function () {
+//     },
+//
+// 	render:function () {
+//         _.each(this.model.models, function (tweets) {
+//             $(this.el).append(this.template(tweets.attributes));
+//         }, this);
+//         return this;
+//
+// 	}
+// });
 
 
 // VIEWS
@@ -48,55 +38,57 @@ TweetView = Backbone.View.extend({
 
 	template: Handlebars.compile($("#app-tweets").html()),
 
-    initialize:function () {
+    initialize:function (e) {
+		this.listenTo(this.collection,'reset', this.renderList);
     },
 
-	render:function () {
-        _.each(this.model.models, function (tweets) {
+	renderList : function(tweets){
+        _.each(tweets.models, function (tweets) {
             $(this.el).append(this.template(tweets.attributes));
         }, this);
-        return this;
 		
-	}
+		return this;
+	},
 });
+
+allTweets = TweetView.extend({ });
 
 
 // THE APP
 
-var AppRouter = Backbone.Router.extend({
-
-    initialize:function () {
-    },
-
-    routes:{
-		"":"home"
-    },
-
-	home: function() {
-		this.tweetList = new TweetsCollection();
-		this.tweetList.fetch({
-			success:function () {
-				var tweets = app.tweetList;				
-				console.log(tweets.length);
-				app.showView('#app-twitterfeed-2', new TweetView({model:tweets}));
-				app.showView('#app-twitterfeed-1', new TweetView({model:tweets}));
-			},
-			error:function(){
-				console.log("Error");
-			}
-		});
-	},
-    showView:function (selector, view) {
-        if (this.currentView) {
-			this.currentView.remove();
-			this.currentView.close();
-        }
-        $(selector).html(view.render().el);
-        this.currentView = view;
-        return view;
-    },
-
-});
+// var AppRouter = Backbone.Router.extend({
+//
+//     initialize:function () {
+//     },
+//
+//     routes:{
+// 		"":"home"
+//     },
+//
+// 	home: function() {
+// 		this.tweetList = new TweetsCollection();
+// 		this.tweetList.fetch({
+// 			success:function () {
+// 				var tweets = app.tweetList;
+// 				console.log(tweets);
+// 				app.showView('#app-twitterfeed-1', new TweetView({model:tweets}));
+// 			},
+// 			error:function(){
+// 				console.log("Error");
+// 			}
+// 		});
+// 	},
+//     showView:function (selector, view) {
+//         if (this.currentView) {
+// 			this.currentView.remove();
+// 			this.currentView.close();
+//         }
+//         $(selector).html(view.render().el);
+//         this.currentView = view;
+//         return view;
+//     },
+//
+// });
 
 Handlebars.registerHelper('formatTweet', function(tweet) {
 
