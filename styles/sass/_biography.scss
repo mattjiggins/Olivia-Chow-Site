@@ -44,6 +44,16 @@
 
 
 #fullBiography {
+  h3 {
+    text-align: center;
+  }
+  .close {
+    font-size: 1em;
+    text-transform: uppercase;
+    position: absolute;
+    top: 20px; right: 20px;
+    z-index: 100;
+  }
   .modal-dialog {
     width: 90%;
   }
