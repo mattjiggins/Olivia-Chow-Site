@@ -3,23 +3,26 @@
 }
 
 .tweets {
-  padding: 70px 50px 20px 80px;
+  padding: 30px;
   margin-left: -20px;
-  @include respond-to(tablet-portrait) {
-    padding: 30px;
-    margin-left: -20px;
+  @include respond-to(tablet-plus) {
+    padding: 30px 30px 20px 30px;
+  }
+  @include respond-to(large-desktop) {
+    padding: 70px 50px 20px 80px;
   }
 }
 .tweet {
-  clear: both;
-  display: block;
-  margin-bottom: 35px;
-  font-size: 1.2em;
+  margin-bottom: 15px;
+  font-size: 1em;
   font-family: $type-headline;
-  @include respond-to(tablet-portrait) {
+  @include respond-to(tablet-plus) {
     font-size: 1em;
-    margin-bottom: 15px;
-    
+    margin-bottom: 25px;
+  }
+  @include respond-to(large-desktop) {
+    font-size: 1.2em;
+    margin-bottom: 35px;
   }
   a {
     color: $colour-textblack;

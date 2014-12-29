@@ -91,66 +91,144 @@ h2 {
   .serif.light {
     font-weight: 100; }
 
-.callout-wirebox {
-  border: 1px solid #444;
-  margin: 20px 0px;
-  padding: 20px 0px; }
+body {
+  color: #444;
+  font-size: 16px; }
+
+.content {
+  margin-left: auto;
+  margin-right: auto; }
+  .content .row.root {
+    margin: 0px; }
+    .content .row.root .right {
+      padding-right: 60px; }
+
+#left {
+  background: #fbf260;
+  min-height: 1500px; }
+
+#right {
+  padding: 0px;
+  /* Landscape phones and down */ }
+  @media (min-width: 768px) {
+    #right {
+      padding: 30px 0px 0px 40px; } }
+
+.social-icons {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .social-icons a {
+    color: #532eaf; }
+
+#app-twitterfeed {
+  font-size: .9em; }
+
+.biography .row {
+  margin: 0px; }
+.biography h1 {
+  color: #532eaf;
+  font-size: 3.2em;
+  margin-bottom: 20px;
+  text-align: center;
+  /* Landscape phones and down */ }
+  @media (min-width: 992px) {
+    .biography h1 {
+      text-align: left; } }
+.biography p {
+  line-height: 1.6;
+  text-align: justify;
+  /* Landscape phones and down */ }
+  @media (min-width: 768px) {
+    .biography p {
+      text-align: left; } }
+.biography .btn {
+  margin: 10px 0px 20px 0px; }
+.biography .photo {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-height: 200px;
+  max-width: 200px;
+  /* Landscape phones and down */
+  /* Landscape phones and down */ }
+  @media (min-width: 768px) {
+    .biography .photo {
+      margin-top: 10px;
+      max-height: 200px;
+      max-width: 200px; } }
+  @media (min-width: 1200px) {
+    .biography .photo {
+      max-height: 250px;
+      max-width: 250px; } }
+
+#fullBiography .modal-dialog {
+  width: 90%; }
+#fullBiography .biography-content {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .callout-box {
-  margin: 20px 0px;
-  padding: 5px; }
+  padding: 20px 0px;
+  margin-bottom: 20px;
+  /* Landscape phones and down */ }
   .callout-box.grey {
     background: #ECECEC; }
-  .callout-box.colour {
-    background: #E3F0EE; }
-  .callout-box .callout-box--content {
-    padding: 20px 40px 40px 40px;
+  .callout-box.book {
     /* Landscape phones and down */ }
-    @media (max-width: 767px) {
-      .callout-box .callout-box--content {
-        padding: 0px 0px 0px 0px; } }
+    @media (min-width: 1200px) {
+      .callout-box.book {
+        padding-right: 50px; } }
+    .callout-box.book .img-book {
+      max-width: 200px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
+  @media (min-width: 1200px) {
+    .callout-box {
+      margin-top: 20px; } }
+  .callout-box .row {
+    margin: 0px; }
   .callout-box h2 {
-    font-size: 2em;
-    margin: 5px 0px 5px 0px; }
+    font-size: 2em; }
   .callout-box .lead {
     font-size: 1em;
-    text-transform: uppercase;
-    margin: 5px 0px 20px 0px; }
+    text-transform: uppercase; }
   .callout-box .buttons {
     margin: 20px 0px; }
     .callout-box .buttons .btn {
       margin: 5px; }
-  .callout-box blockquote {
-    border: none !important;
-    text-align: left;
-    padding: 0px;
-    margin: 20px 0px 0px 0px; }
-    .callout-box blockquote p {
-      font-size: .8em; }
 
 .tweet-image {
   max-width: 100px; }
 
 .tweets {
-  padding: 70px 50px 20px 80px;
+  padding: 30px;
   margin-left: -20px;
+  /* Landscape phones and down */
   /* Landscape phones and down */ }
-  @media (max-width: 767px) {
+  @media (min-width: 768px) {
     .tweets {
-      padding: 30px;
-      margin-left: -20px; } }
+      padding: 30px 30px 20px 30px; } }
+  @media (min-width: 1200px) {
+    .tweets {
+      padding: 70px 50px 20px 80px; } }
 
 .tweet {
-  clear: both;
-  display: block;
-  margin-bottom: 35px;
-  font-size: 1.2em;
+  margin-bottom: 15px;
+  font-size: 1em;
   font-family: "adelle", "Helvetica Neue", Arial, sans-serif;
+  /* Landscape phones and down */
   /* Landscape phones and down */ }
-  @media (max-width: 767px) {
+  @media (min-width: 768px) {
     .tweet {
       font-size: 1em;
-      margin-bottom: 15px; } }
+      margin-bottom: 25px; } }
+  @media (min-width: 1200px) {
+    .tweet {
+      font-size: 1.2em;
+      margin-bottom: 35px; } }
   .tweet a {
     color: #444;
     border-bottom: 1px dotted #444;
@@ -165,93 +243,9 @@ h2 {
         background: transparent;
         color: #532eaf; }
 
-body {
-  color: #444;
-  font-size: 16px; }
-
-.content {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto; }
-  .content .row.root {
-    margin: 0px; }
-    .content .row.root .right {
-      padding-right: 60px; }
-
-#left {
-  background: #fbf260;
-  min-height: 1500px; }
-
-#right {
-  padding: 30px 0px 0px 40px; }
-  #right .callout-box--content {
-    padding-right: 80px; }
-
-.biography {
-  margin-bottom: 50px;
-  padding: 0px 80px 0px 0px;
-  /* Landscape phones and down */
-  /* Landscape phones and down */ }
-  @media (max-width: 1200px) {
-    .biography {
-      padding: 0px 10px 0px 0px; } }
-  @media (max-width: 991px) {
-    .biography {
-      padding: 0px 30px 0px 0px; } }
-  .biography h1 {
-    color: #532eaf;
-    font-size: 4.2em;
-    margin-bottom: 20px;
-    /* Landscape phones and down */
-    /* Landscape phones and down */
-    /* Landscape phones and down */ }
-    @media (max-width: 1200px) {
-      .biography h1 {
-        font-size: 3.5em; } }
-    @media (max-width: 991px) {
-      .biography h1 {
-        text-align: center; } }
-    @media (max-width: 767px) {
-      .biography h1 {
-        font-size: 3.2em; } }
-  .biography p {
-    line-height: 1.6;
-    /* Landscape phones and down */ }
-    @media (max-width: 991px) {
-      .biography p {
-        text-align: justify; } }
-  .biography .btn {
-    margin-top: 20px; }
-  .biography .photo {
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    max-height: 250px;
-    max-width: 250px;
-    /* Landscape phones and down */ }
-    @media (max-width: 1200px) {
-      .biography .photo {
-        margin-top: 0px; } }
-
-#fullBiography .modal-dialog {
-  width: 90%; }
-#fullBiography .biography-content {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.social-icons {
-  margin-top: 20px;
-  margin-bottom: 20px; }
-  .social-icons a {
-    color: #532eaf; }
-
-#app-twitterfeed {
-  font-size: .9em; }
-
 #app-instagramfeed .thumbnail {
   border: none;
-  margin-bottom: 0px; }
-#app-instagramfeed .col-xs-4.col-sm-4 {
-  padding: 1px; }
+  margin-bottom: 0px;
+  padding: 0px; }
+#app-instagramfeed .col-xs-4.col-lg-3 {
+  padding: 0px; }

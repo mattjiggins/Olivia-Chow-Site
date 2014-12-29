@@ -157,24 +157,21 @@
 			
 			
 			<!-- START BOOK -->
-			<div class="callout-box grey">
+			<div class="callout-box grey book">
 				<div class="callout-box--content text-center">
 					<p class="lead">Olivia's Memoir</p>
 					<div class="row">
 						<div class="col-xs-4">
-							<img src="images/bookCover-web.jpg" class="img-responsive" alt="BookCover Web">
+							<img src="images/bookCover-web.jpg" class="img-responsive img-book" alt="BookCover Web">
 						</div>
 						<div class="col-xs-8">
 							<h2>My Journey</h2>
 							<div class="buttons">
-								<a href="" class="btn btn-outline btn-outline--primary">More Info</a>
-								<a href="" class="btn btn-primary">Purchase</a>
+								<a target="_blank" href="http://www.chapters.indigo.ca/books/my-journey/9781443428309-item.html?s_campaign=goo-BooksByTitle&gclid=Cj0KEQiAn9-kBRDloNeUw7Pe_YwBEiQA4HXMU9kjLnDbSSfmHFEffAC18GPM_ioH8WCvffH_IkW6r70aAlFk8P8HAQ
+" class="btn btn-outline btn-outline--primary">Paperback<br><small>&amp; Kobo</small></a>
+								<a target="_blank" href="http://www.amazon.ca/My-Journey-Olivia-Chow/dp/1443428299" class="btn btn-primary">Hardcover<br><small>&amp; Kindle</small></a>
 							</div>
 							<p class="serif light">Olivia Chow—Member of Parliament, seasoned politician and widow of former New Democratic Party leader Jack Layton—tells her story in this candid memoir.</p>
-							<blockquote>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-								<footer><cite title="Source Title">Source Title</cite></footer>
-							</blockquote>
 						</div>
 					</div>
 				</div>
@@ -185,20 +182,15 @@
 			<div class="callout-box">
 				<div class="callout-box--content text-center">
 					<p class="lead">Olivia's Instagram</p>
-					
-					<!-- .row>(.col-xs-6.col-sm-3>a.thumbnail>img.img-responsive[src='http://placehold.it/350x350'])*12 -->
 					<div class="row">
-						<div id="app-instagramfeed">Loading Grams</div>
+						<div id="app-instagramfeed">Loading Instagrams</div>
 					</div>
-					
-					
-					
 				</div>
 			</div>
 			 <!-- /END INSTAGRAM -->
 			 
 			 <!-- START CONTACT -->
-			<div class="callout-box grey">
+			<div class="callout-box grey hidden-xs hidden-sm">
 				<div class="callout-box--content  text-center">
 					<p class="lead">Contact Olivia</p>
 					<div class="buttons">
@@ -218,10 +210,23 @@
 		
 		<div id="left" class="col-sm-5 col-sm-pull-7">
 			<div id="app-twitterfeed-1">Loading Twitter</div>
-			<div id="the-tweets"></div>
-			
 		</div>
 	</div>
+	
+	 <!-- START CONTACT -->
+	<div class="callout-box grey visible-xs visible-sm" style="margin: 0px; padding-top: 20px;">
+		<div class="callout-box--content  text-center">
+			<p class="lead">Contact Olivia</p>
+			<div class="buttons">
+				<a href="https://twitter.com/oliviachow" target="_blank" class="btn btn-outline btn-outline--primary">Twitter</a>
+				<a href="mailto:info@oliviachow.ca" target="_blank" class="btn btn-outline btn-outline--primary">Email</a>
+				<a href="https://www.facebook.com/OliviaChowTO" target="_blank" class="btn btn-outline btn-outline--primary">Facebook</a>
+				<a href="https://www.youtube.com/user/chowolivia" target="_blank" class="btn btn-outline btn-outline--primary">Youtube</a>
+				<a href="https://www.instagram.com/oliviachow" target="_blank" class="btn btn-outline btn-outline--primary">Instagram</a>
+			</div>							
+		</div>
+	</div> 
+	<!-- /END CONTACT -->
 
 	
 	<script id="app-tweets" type="text/x-handlebars-template">
@@ -236,7 +241,7 @@
 	</script>
 	<script id="app-instagram-gram" type="text/x-handlebars-template">		
 		<div class="gram">
-			<div class="col-xs-4 col-sm-4">
+			<div class="col-xs-4 col-lg-3">
 				<a href="{{link}}" target="_blank" class="thumbnail">
 					<img src="{{images.low_resolution.url}}" alt="{{caption.text}}" class="img-responsive" />
 				</a>
