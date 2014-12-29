@@ -7,8 +7,9 @@ $feed = "https://api.instagram.com/v1/users/1002283763/media/recent/?access_toke
 $cache_file = dirname(__FILE__).'/cache/'.'instagram-cache';
 $modified = filemtime( $cache_file );
 $now = time();
-$interval = 60; // one minutes
-// $interval = 600; // ten minutes
+// $interval = 60; // one minutes
+$interval = 600; // ten minutes
+
 // check the cache file
 if ( !$modified || ( ( $now - $modified ) > $interval ) ) {
   $context = stream_context_create(array(
