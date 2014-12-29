@@ -95,6 +95,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/icon-192.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6552,
+		"inputAbbreviatedPath": "\/images\/icon-192.png",
+		"outputAbbreviatedPath": "\/images\/icon-192.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icon-36.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1311,
+		"inputAbbreviatedPath": "\/images\/icon-36.png",
+		"outputAbbreviatedPath": "\/images\/icon-36.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icon-72.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2470,
+		"inputAbbreviatedPath": "\/images\/icon-72.png",
+		"outputAbbreviatedPath": "\/images\/icon-72.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/OliviaChow-Photo.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
