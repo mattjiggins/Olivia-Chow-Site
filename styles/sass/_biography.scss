@@ -1,0 +1,55 @@
+.biography {
+  .row {
+    margin: 0px;
+  }
+
+  h1 {
+    color: $colour-primary;
+    font-size: 3.2em;
+    margin-bottom: 20px;
+    text-align: center;
+    @include respond-to(desktop) {
+      text-align: left;
+    }
+  }
+  
+  p {
+    line-height: 1.6;
+    text-align: justify;
+    
+    @include respond-to (tablet-plus) {
+      text-align: left;
+    }
+  }
+  .btn {
+    margin: 10px 0px 20px 0px;
+  }
+  .photo {
+    margin-top: 30px;
+    margin-left: auto; margin-right: auto;
+    width: 100%;
+    max-height: 200px;
+    max-width: 200px;
+    @include respond-to(tablet-plus) {
+      margin-top: 10px;
+      max-height: 200px;
+      max-width: 200px;
+    }
+    @include respond-to(large-desktop) {
+      max-height: 250px;
+      max-width: 250px;
+    }
+  }
+}
+
+
+#fullBiography {
+  .modal-dialog {
+    width: 90%;
+  }
+  .biography-content {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,48 +1,46 @@
-.callout-wirebox {
-  border: 1px solid $colour-textblack;
-  margin: 20px 0px;
-  padding: 20px 0px;
-}
-
 .callout-box {
-  
-  margin: 20px 0px;
-  padding: 5px;
-  
   &.grey {
     background: $colour-boxgrey;
   }
-  &.colour {
-    background: $colour-boxgreen;
-  }
-  
-  .callout-box--content {
-    padding: 20px 40px 40px 40px;
-    @include respond-to(tablet-portrait) {
-      padding: 0px 0px 0px 0px;
+  &.book {
+    @include respond-to(large-desktop) {
+      padding-right: 50px;
+    }
+    .img-book {
+      max-width: 200px;
+      width: 100%;
+      margin-left: auto; margin-right: auto;
     }
   }
+  
+  padding: 20px 0px;
+  margin-bottom: 20px;
+  
+  @include respond-to(large-desktop) {
+    margin-top: 20px;
+  }
+  
+  .row {
+   margin: 0px;
+  }
+
+  .callout-box--content {
+  }
+  
   h2 {
     font-size: 2em;
-    margin: 5px 0px 5px 0px;
   }
+  
   .lead {
     font-size: 1em;
     text-transform: uppercase;
-    margin: 5px 0px 20px 0px;
   }
+  
   .buttons {
     margin: 20px 0px;
     .btn {
       margin: 5px;
     }
   }
-  blockquote {
-    border: none !important;
-    text-align: left;
-    padding: 0px;
-    margin: 20px 0px 0px 0px;
-    p {font-size: .8em;}
-    
-  }
+
 }

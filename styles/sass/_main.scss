@@ -4,7 +4,6 @@ body {
 }
 
 .content {
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   .row.root {
@@ -20,69 +19,12 @@ body {
   min-height: 1500px;
 }
 #right {
-  padding: 30px 0px 0px 40px;
-  .callout-box--content {
-    padding-right: 80px;
+  padding: 0px;
+  @include respond-to(tablet-plus) {
+    padding: 30px 0px 0px 40px;
   }
 }
 
-.biography {
-  
-  margin-bottom: 50px;
-  padding: 0px 80px 0px 0px;
-  
-  @include respond-to(large-desktop-smaller) {
-    padding: 0px 10px 0px 0px;
-  }
-  @include respond-to (small-desktop) {
-    padding: 0px 30px 0px 0px;
-  }
-  h1 {
-    color: $colour-primary;
-    font-size: 4.2em;
-    margin-bottom: 20px;
-    @include respond-to (large-desktop-smaller) {
-      font-size: 3.5em;
-    }
-    @include respond-to (small-desktop) {
-      text-align: center;
-    }
-    @include respond-to (tablet-portrait) {
-      font-size: 3.2em;
-    }
-  }
-  p {
-    line-height: 1.6;
-    @include respond-to (small-desktop) {
-      text-align: justify;
-    }
-  }
-  .btn {
-    margin-top: 20px;
-  }
-  .photo {
-    margin-top: 30px;
-    margin-left: auto; margin-right: auto;
-    width: 100%;
-    max-height: 250px;
-    max-width: 250px;
-    @include respond-to (large-desktop-smaller) {
-      margin-top: 0px;
-    }
-  }
-}
-
-
-#fullBiography {
-  .modal-dialog {
-    width: 90%;
-  }
-  .biography-content {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 
 .social-icons {
   a {color: $colour-primary;}
@@ -96,12 +38,3 @@ body {
   font-size: .9em;
 }
 
-#app-instagramfeed {
-  .thumbnail {
-    border: none;
-    margin-bottom: 0px;
-  }
-  .col-xs-4.col-sm-4 {
-    padding: 1px;
-  }
-}
