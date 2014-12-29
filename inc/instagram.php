@@ -1,24 +1,20 @@
 <?php
-
 include('keys.php');
 
 error_reporting( 0 ); // don't let any php errors ruin the feed
 
-$username = 'oliviachow';
-$number_tweets = 25;
-$feed = "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name={$username}&count={$number_tweets}&include_rts=1";
-$cache_file = dirname(__FILE__).'/cache/'.'twitter-cache';
+$feed = "https://api.instagram.com/v1/users/1002283763/media/recent/?access_token=".$instagramToken;
+$cache_file = dirname(__FILE__).'/cache/'.'instagram-cache';
 $modified = filemtime( $cache_file );
 $now = time();
 $interval = 60; // one minutes
 // $interval = 600; // ten minutes
-
 // check the cache file
 if ( !$modified || ( ( $now - $modified ) > $interval ) ) {
   $context = stream_context_create(array(
     'http' => array(
       'method'=>'GET',
-      'header'=>"Authorization: Bearer " . $bearer
+      // 'header'=>"Authorization: Bearer " . $bearer
       )
   ));
   
