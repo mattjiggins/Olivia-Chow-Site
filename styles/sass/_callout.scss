@@ -3,6 +3,7 @@
     background: $colour-boxgrey;
   }
   &.book {
+    padding: 10px;
     @include respond-to(large-desktop) {
       padding-right: 50px;
     }
@@ -10,6 +11,9 @@
       max-width: 200px;
       width: 100%;
       margin-left: auto; margin-right: auto;
+    }
+    .description {
+      margin-top: 10px;
     }
   }
   
