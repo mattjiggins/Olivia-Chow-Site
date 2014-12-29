@@ -5,6 +5,10 @@
 .tweets {
   padding: 70px 50px 20px 80px;
   margin-left: -20px;
+  @include respond-to(tablet-portrait) {
+    padding: 30px;
+    margin-left: -20px;
+  }
 }
 .tweet {
   clear: both;
@@ -12,6 +16,11 @@
   margin-bottom: 35px;
   font-size: 1.2em;
   font-family: $type-headline;
+  @include respond-to(tablet-portrait) {
+    font-size: 1em;
+    margin-bottom: 15px;
+    
+  }
   a {
     color: $colour-textblack;
     border-bottom: 1px dotted $colour-textblack;

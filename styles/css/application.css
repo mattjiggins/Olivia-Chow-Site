@@ -94,7 +94,7 @@ h2 {
 .callout-wirebox {
   border: 1px solid #444;
   margin: 20px 0px;
-  padding: 20px 60px; }
+  padding: 20px 0px; }
 
 .callout-box {
   margin: 20px 0px;
@@ -104,7 +104,11 @@ h2 {
   .callout-box.colour {
     background: #E3F0EE; }
   .callout-box .callout-box--content {
-    padding: 20px 40px 40px 40px; }
+    padding: 20px 40px 40px 40px;
+    /* Landscape phones and down */ }
+    @media (max-width: 767px) {
+      .callout-box .callout-box--content {
+        padding: 0px 0px 0px 0px; } }
   .callout-box h2 {
     font-size: 2em;
     margin: 5px 0px 5px 0px; }
@@ -129,14 +133,24 @@ h2 {
 
 .tweets {
   padding: 70px 50px 20px 80px;
-  margin-left: -20px; }
+  margin-left: -20px;
+  /* Landscape phones and down */ }
+  @media (max-width: 767px) {
+    .tweets {
+      padding: 30px;
+      margin-left: -20px; } }
 
 .tweet {
   clear: both;
   display: block;
   margin-bottom: 35px;
   font-size: 1.2em;
-  font-family: "adelle", "Helvetica Neue", Arial, sans-serif; }
+  font-family: "adelle", "Helvetica Neue", Arial, sans-serif;
+  /* Landscape phones and down */ }
+  @media (max-width: 767px) {
+    .tweet {
+      font-size: 1em;
+      margin-bottom: 15px; } }
   .tweet a {
     color: #444;
     border-bottom: 1px dotted #444;
@@ -176,16 +190,36 @@ body {
 .biography {
   margin-bottom: 50px;
   padding: 0px 80px 0px 0px;
+  /* Landscape phones and down */
   /* Landscape phones and down */ }
   @media (max-width: 1200px) {
     .biography {
       padding: 0px 10px 0px 0px; } }
+  @media (max-width: 991px) {
+    .biography {
+      padding: 0px 30px 0px 0px; } }
   .biography h1 {
     color: #532eaf;
-    font-size: 4.3em;
-    margin-bottom: 20px; }
+    font-size: 4.2em;
+    margin-bottom: 20px;
+    /* Landscape phones and down */
+    /* Landscape phones and down */
+    /* Landscape phones and down */ }
+    @media (max-width: 1200px) {
+      .biography h1 {
+        font-size: 3.5em; } }
+    @media (max-width: 991px) {
+      .biography h1 {
+        text-align: center; } }
+    @media (max-width: 767px) {
+      .biography h1 {
+        font-size: 3.2em; } }
   .biography p {
-    line-height: 1.6; }
+    line-height: 1.6;
+    /* Landscape phones and down */ }
+    @media (max-width: 991px) {
+      .biography p {
+        text-align: justify; } }
   .biography .btn {
     margin-top: 20px; }
   .biography .photo {
@@ -194,7 +228,11 @@ body {
     margin-right: auto;
     width: 100%;
     max-height: 250px;
-    max-width: 250px; }
+    max-width: 250px;
+    /* Landscape phones and down */ }
+    @media (max-width: 1200px) {
+      .biography .photo {
+        margin-top: 0px; } }
 
 #fullBiography .modal-dialog {
   width: 90%; }
@@ -211,3 +249,9 @@ body {
 
 #app-twitterfeed {
   font-size: .9em; }
+
+#app-instagramfeed .thumbnail {
+  border: none;
+  margin-bottom: 0px; }
+#app-instagramfeed .col-xs-4.col-sm-4 {
+  padding: 1px; }
