@@ -15,6 +15,9 @@
     @include respond-to(desktop) {
       text-align: left;
     }
+    @include respond-to(large-desktop) {
+      font-size: 4em;
+    }
   }
   
   p {

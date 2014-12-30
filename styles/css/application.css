@@ -137,7 +137,7 @@ body {
         padding: 0px 50px 20px 80px; } }
 
 #right {
-  background: #E6E2DA;
+  background: #f1f1f1;
   min-height: 1500px;
   padding: 10px 30px 100px 30px;
   /* Landscape phones and down */ }
@@ -179,10 +179,14 @@ body {
     font-size: 3.2em;
     margin-bottom: 20px;
     text-align: center;
+    /* Landscape phones and down */
     /* Landscape phones and down */ }
     @media (min-width: 992px) {
       .biography h1 {
         text-align: left; } }
+    @media (min-width: 1200px) {
+      .biography h1 {
+        font-size: 4em; } }
   .biography p {
     line-height: 1.6;
     text-align: justify;
@@ -236,7 +240,7 @@ body {
       margin-top: 20px;
       margin-bottom: 40px; } }
   .callout-box.grey {
-    background: #f1f1f1; }
+    background: #f9f9f9; }
   .callout-box.book {
     padding: 10px;
     /* Landscape phones and down */ }
@@ -262,17 +266,30 @@ body {
 .callout-box--instagram {
   padding-top: 0px; }
   .callout-box--instagram .section-title {
-    background: #f1f1f1;
+    background: #f9f9f9;
     margin-bottom: 0px;
     padding: 20px 0px;
     margin-top: 0px; }
 
 .callout-box--text-entry .callout-box--content {
   padding: 20px;
+  /* Landscape phones and down */
   /* Landscape phones and down */ }
   @media (min-width: 768px) {
     .callout-box--text-entry .callout-box--content {
-      padding: 0px 40px; } }
+      padding: 0px 40px 0px 20px; } }
+  @media (min-width: 992px) {
+    .callout-box--text-entry .callout-box--content {
+      padding: 0px 40px 0px 60px; } }
+
+.callout-box--contact {
+  padding-top: 0px;
+  background: #F4F4F4; }
+  .callout-box--contact .section-title {
+    background: #f9f9f9;
+    margin-bottom: 0px;
+    padding: 20px 0px;
+    margin-top: 0px; }
 
 .tweet-image {
   max-width: 100px; }

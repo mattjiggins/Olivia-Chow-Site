@@ -63,8 +63,24 @@
   
   .callout-box--content {
     padding: 20px;
+
     @include respond-to(tablet-plus) {
-      padding: 0px 40px;
+      padding: 0px 40px 0px 20px;
     }
+    @include respond-to(desktop) {
+      padding: 0px 40px 0px 60px;
+    }
+  }
+}
+
+.callout-box--contact {
+  padding-top: 0px;
+  background: $colour-backgrey;
+
+  .section-title {
+    background: $colour-boxgrey;
+    margin-bottom: 0px;
+    padding: 20px 0px;
+    margin-top: 0px;
   }
 }
