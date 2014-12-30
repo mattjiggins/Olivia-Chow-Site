@@ -139,7 +139,11 @@ body {
 #right {
   background: #E6E2DA;
   min-height: 1500px;
-  padding: 10px 30px 100px 30px; }
+  padding: 10px 30px 100px 30px;
+  /* Landscape phones and down */ }
+  @media (min-width: 768px) {
+    #right {
+      padding: 40px 30px 100px 30px; } }
 
 .section-title {
   font-size: 1em;
