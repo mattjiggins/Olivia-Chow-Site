@@ -3,13 +3,13 @@
 }
 
 .tweets {
-  padding: 30px;
-  margin-left: -20px;
+//   padding: 30px;
+//   margin-left: -20px;
   @include respond-to(tablet-plus) {
-    padding: 30px 30px 20px 30px;
+    padding: 0px 30px 20px 30px;
   }
   @include respond-to(large-desktop) {
-    padding: 70px 50px 20px 80px;
+    padding: 0px 50px 20px 80px;
   }
 }
 .tweet {

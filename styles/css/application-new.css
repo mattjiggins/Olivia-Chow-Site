@@ -164,6 +164,11 @@ h2 {
   font-size: 1.4em;
   font-weight: 100; }
 
+.section-title {
+  font-family: "adelle", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.4em;
+  font-weight: 100; }
+
 .serif {
   font-family: "adelle", "Helvetica Neue", Arial, sans-serif; }
   .serif.light {

@@ -1,4 +1,8 @@
 .biography {
+  
+  @include respond-to (tablet-plus) {
+    padding-left: 40px;
+  }  
   .row {
     margin: 0px;
   }

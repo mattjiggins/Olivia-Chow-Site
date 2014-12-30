@@ -5,7 +5,7 @@
   &.book {
     padding: 10px;
     @include respond-to(large-desktop) {
-      padding-right: 50px;
+      padding-left: 50px;
     }
     .img-book {
       max-width: 200px;
@@ -33,11 +33,6 @@
   
   h2 {
     font-size: 2em;
-  }
-  
-  .lead {
-    font-size: 1em;
-    text-transform: uppercase;
   }
   
   .buttons {

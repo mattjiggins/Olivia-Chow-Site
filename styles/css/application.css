@@ -86,6 +86,11 @@ h2 {
   font-size: 1.4em;
   font-weight: 100; }
 
+.section-title {
+  font-family: "adelle", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.4em;
+  font-weight: 100; }
+
 .serif {
   font-family: "adelle", "Helvetica Neue", Arial, sans-serif; }
   .serif.light {
@@ -104,15 +109,47 @@ body {
       padding-right: 60px; }
 
 #left {
-  background: #fbf260;
-  min-height: 1500px; }
-
-#right {
   padding: 0px;
+  line-height: 1.6;
+  text-align: justify;
   /* Landscape phones and down */ }
   @media (min-width: 768px) {
-    #right {
-      padding: 30px 0px 0px 40px; } }
+    #left {
+      padding: 30px 40px 0px 0px;
+      text-align: left; } }
+
+.welcome {
+  line-height: 1.6;
+  text-align: justify; }
+  .welcome.visible-xs {
+    padding: 10px;
+    margin-bottom: 20px; }
+  .welcome.hidden-xs {
+    padding: 0px 80px;
+    margin-bottom: 20px;
+    /* Landscape phones and down */
+    /* Landscape phones and down */ }
+    @media (min-width: 768px) {
+      .welcome.hidden-xs {
+        padding: 0px 30px 20px 30px; } }
+    @media (min-width: 1200px) {
+      .welcome.hidden-xs {
+        padding: 0px 50px 20px 80px; } }
+
+#right {
+  background: #E6E2DA;
+  min-height: 1500px;
+  padding: 10px 30px 100px 30px; }
+
+.section-title {
+  font-size: 1em;
+  margin-top: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  /* Landscape phones and down */ }
+  @media (min-width: 768px) {
+    .section-title {
+      margin-top: 10px; } }
 
 .social-icons {
   margin-top: 20px;
@@ -120,47 +157,55 @@ body {
   .social-icons a {
     color: #532eaf; }
 
+.padding-10 {
+  padding: 10px; }
+
 #app-twitterfeed {
   font-size: .9em; }
 
-.biography .row {
-  margin: 0px; }
-.biography h1 {
-  color: #532eaf;
-  font-size: 3.2em;
-  margin-bottom: 20px;
-  text-align: center;
-  /* Landscape phones and down */ }
-  @media (min-width: 992px) {
-    .biography h1 {
-      text-align: left; } }
-.biography p {
-  line-height: 1.6;
-  text-align: justify;
+.biography {
   /* Landscape phones and down */ }
   @media (min-width: 768px) {
-    .biography p {
-      text-align: left; } }
-.biography .btn {
-  margin: 10px 0px 20px 0px; }
-.biography .photo {
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-height: 200px;
-  max-width: 200px;
-  /* Landscape phones and down */
-  /* Landscape phones and down */ }
-  @media (min-width: 768px) {
-    .biography .photo {
-      margin-top: 10px;
-      max-height: 200px;
-      max-width: 200px; } }
-  @media (min-width: 1200px) {
-    .biography .photo {
-      max-height: 250px;
-      max-width: 250px; } }
+    .biography {
+      padding-left: 40px; } }
+  .biography .row {
+    margin: 0px; }
+  .biography h1 {
+    color: #532eaf;
+    font-size: 3.2em;
+    margin-bottom: 20px;
+    text-align: center;
+    /* Landscape phones and down */ }
+    @media (min-width: 992px) {
+      .biography h1 {
+        text-align: left; } }
+  .biography p {
+    line-height: 1.6;
+    text-align: justify;
+    /* Landscape phones and down */ }
+    @media (min-width: 768px) {
+      .biography p {
+        text-align: left; } }
+  .biography .btn {
+    margin: 10px 0px 20px 0px; }
+  .biography .photo {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-height: 200px;
+    max-width: 200px;
+    /* Landscape phones and down */
+    /* Landscape phones and down */ }
+    @media (min-width: 768px) {
+      .biography .photo {
+        margin-top: 10px;
+        max-height: 200px;
+        max-width: 200px; } }
+    @media (min-width: 1200px) {
+      .biography .photo {
+        max-height: 250px;
+        max-width: 250px; } }
 
 #fullBiography h3 {
   text-align: center; }
@@ -189,7 +234,7 @@ body {
     /* Landscape phones and down */ }
     @media (min-width: 1200px) {
       .callout-box.book {
-        padding-right: 50px; } }
+        padding-left: 50px; } }
     .callout-box.book .img-book {
       max-width: 200px;
       width: 100%;
@@ -204,9 +249,6 @@ body {
     margin: 0px; }
   .callout-box h2 {
     font-size: 2em; }
-  .callout-box .lead {
-    font-size: 1em;
-    text-transform: uppercase; }
   .callout-box .buttons {
     margin: 20px 0px; }
     .callout-box .buttons .btn {
@@ -216,16 +258,14 @@ body {
   max-width: 100px; }
 
 .tweets {
-  padding: 30px;
-  margin-left: -20px;
   /* Landscape phones and down */
   /* Landscape phones and down */ }
   @media (min-width: 768px) {
     .tweets {
-      padding: 30px 30px 20px 30px; } }
+      padding: 0px 30px 20px 30px; } }
   @media (min-width: 1200px) {
     .tweets {
-      padding: 70px 50px 20px 80px; } }
+      padding: 0px 50px 20px 80px; } }
 
 .tweet {
   margin-bottom: 15px;
@@ -254,6 +294,11 @@ body {
       .tweet a.action:hover {
         background: transparent;
         color: #532eaf; }
+
+.callout-box--instagram .section-title {
+  background: #ECECEC;
+  margin-bottom: 0px;
+  padding: 20px 0px; }
 
 #app-instagramfeed .thumbnail {
   border: none;
