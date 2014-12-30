@@ -231,8 +231,12 @@ body {
   padding: 20px 0px;
   margin-bottom: 20px;
   /* Landscape phones and down */ }
+  @media (min-width: 1200px) {
+    .callout-box {
+      margin-top: 20px;
+      margin-bottom: 40px; } }
   .callout-box.grey {
-    background: #ECECEC; }
+    background: #f1f1f1; }
   .callout-box.book {
     padding: 10px;
     /* Landscape phones and down */ }
@@ -246,9 +250,6 @@ body {
       margin-right: auto; }
     .callout-box.book .description {
       margin-top: 10px; }
-  @media (min-width: 1200px) {
-    .callout-box {
-      margin-top: 20px; } }
   .callout-box .row {
     margin: 0px; }
   .callout-box h2 {
@@ -257,6 +258,21 @@ body {
     margin: 20px 0px; }
     .callout-box .buttons .btn {
       margin: 5px; }
+
+.callout-box--instagram {
+  padding-top: 0px; }
+  .callout-box--instagram .section-title {
+    background: #f1f1f1;
+    margin-bottom: 0px;
+    padding: 20px 0px;
+    margin-top: 0px; }
+
+.callout-box--text-entry .callout-box--content {
+  padding: 20px;
+  /* Landscape phones and down */ }
+  @media (min-width: 768px) {
+    .callout-box--text-entry .callout-box--content {
+      padding: 0px 40px; } }
 
 .tweet-image {
   max-width: 100px; }
@@ -298,11 +314,6 @@ body {
       .tweet a.action:hover {
         background: transparent;
         color: #532eaf; }
-
-.callout-box--instagram .section-title {
-  background: #ECECEC;
-  margin-bottom: 0px;
-  padding: 20px 0px; }
 
 #app-instagramfeed .thumbnail {
   border: none;

@@ -1,4 +1,13 @@
 .callout-box {
+  padding: 20px 0px;
+  margin-bottom: 20px;
+  
+  @include respond-to(large-desktop) {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+
   &.grey {
     background: $colour-boxgrey;
   }
@@ -17,12 +26,8 @@
     }
   }
   
-  padding: 20px 0px;
-  margin-bottom: 20px;
   
-  @include respond-to(large-desktop) {
-    margin-top: 20px;
-  }
+
   
   .row {
    margin: 0px;
@@ -42,4 +47,24 @@
     }
   }
 
+}
+
+.callout-box--instagram {
+  padding-top: 0px;
+  .section-title {
+    background: $colour-boxgrey;
+    margin-bottom: 0px;
+    padding: 20px 0px;
+    margin-top: 0px;
+  }
+}
+
+.callout-box--text-entry {
+  
+  .callout-box--content {
+    padding: 20px;
+    @include respond-to(tablet-plus) {
+      padding: 0px 40px;
+    }
+  }
 }
