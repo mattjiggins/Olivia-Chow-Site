@@ -69,14 +69,14 @@ pre,
   background-image: none !important; }
 
 body {
-  font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif; }
+  font-family: "adelle-sans", "Helvetica Neue", Arial, sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "adelle", "Helvetica Neue", Arial, sans-serif;
   font-weight: 700; }
 
 p {
-  font-weight: 400; }
+  font-weight: 300; }
 
 h2 {
   font-size: 3em; }
@@ -84,12 +84,16 @@ h2 {
 .lead {
   font-family: "adelle", "Helvetica Neue", Arial, sans-serif;
   font-size: 1.4em;
-  font-weight: 100; }
+  font-weight: 400; }
 
 .section-title {
   font-family: "adelle", "Helvetica Neue", Arial, sans-serif;
-  font-size: 1.4em;
-  font-weight: 100; }
+  font-size: 1em;
+  font-weight: 400; }
+
+.tweet p {
+  font-family: "adelle", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 100 !important; }
 
 .serif {
   font-family: "adelle", "Helvetica Neue", Arial, sans-serif; }
@@ -125,28 +129,22 @@ body {
     padding: 10px;
     margin-bottom: 20px; }
   .welcome.hidden-xs {
-    padding: 0px 80px;
-    margin-bottom: 20px;
-    /* Landscape phones and down */
-    /* Landscape phones and down */ }
-    @media (min-width: 768px) {
-      .welcome.hidden-xs {
-        padding: 0px 30px 20px 30px; } }
-    @media (min-width: 1200px) {
-      .welcome.hidden-xs {
-        padding: 0px 50px 20px 80px; } }
+    margin-bottom: 30px; }
 
 #right {
   background: #f1f1f1;
   min-height: 1500px;
   padding: 10px 30px 100px 30px;
+  /* Landscape phones and down */
   /* Landscape phones and down */ }
   @media (min-width: 768px) {
     #right {
-      padding: 40px 30px 100px 30px; } }
+      padding: 93px 40px 100px 40px; } }
+  @media (min-width: 992px) {
+    #right {
+      padding: 93px 80px 100px 80px; } }
 
 .section-title {
-  font-size: 1em;
   margin-top: 40px;
   text-align: center;
   text-transform: uppercase;
@@ -294,20 +292,9 @@ body {
 .tweet-image {
   max-width: 100px; }
 
-.tweets {
-  /* Landscape phones and down */
-  /* Landscape phones and down */ }
-  @media (min-width: 768px) {
-    .tweets {
-      padding: 0px 30px 20px 30px; } }
-  @media (min-width: 1200px) {
-    .tweets {
-      padding: 0px 50px 20px 80px; } }
-
 .tweet {
   margin-bottom: 15px;
   font-size: 1em;
-  font-family: "adelle", "Helvetica Neue", Arial, sans-serif;
   /* Landscape phones and down */
   /* Landscape phones and down */ }
   @media (min-width: 768px) {
@@ -316,7 +303,7 @@ body {
       margin-bottom: 25px; } }
   @media (min-width: 1200px) {
     .tweet {
-      font-size: 1.2em;
+      font-size: 1em;
       margin-bottom: 35px; } }
   .tweet a {
     color: #444;

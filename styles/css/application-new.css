@@ -147,14 +147,14 @@ pre,
       font-size: .8em; }
 
 body {
-  font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif; }
+  font-family: "adelle-sans", "Helvetica Neue", Arial, sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "adelle", "Helvetica Neue", Arial, sans-serif;
   font-weight: 700; }
 
 p {
-  font-weight: 400; }
+  font-weight: 300; }
 
 h2 {
   font-size: 3em; }
@@ -162,12 +162,16 @@ h2 {
 .lead {
   font-family: "adelle", "Helvetica Neue", Arial, sans-serif;
   font-size: 1.4em;
-  font-weight: 100; }
+  font-weight: 400; }
 
 .section-title {
   font-family: "adelle", "Helvetica Neue", Arial, sans-serif;
-  font-size: 1.4em;
-  font-weight: 100; }
+  font-size: 1em;
+  font-weight: 400; }
+
+.tweet p {
+  font-family: "adelle", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 100 !important; }
 
 .serif {
   font-family: "adelle", "Helvetica Neue", Arial, sans-serif; }

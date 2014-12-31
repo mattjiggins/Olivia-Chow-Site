@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 p {
-  font-weight: 400;
+  font-weight: 300;
 }
 
 h2 {
@@ -17,13 +17,18 @@ h2 {
 .lead {
   font-family: $type-headline;
   font-size: 1.4em;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .section-title {
   font-family: $type-headline;
-  font-size: 1.4em;
-  font-weight: 100; 
+  font-size: 1em;
+  font-weight: 400; 
+}
+
+.tweet p{
+  font-family: $type-headline;
+  font-weight: 100 !important;
 }
 
 .serif {

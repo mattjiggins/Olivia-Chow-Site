@@ -32,27 +32,23 @@ body {
     margin-bottom: 20px;
   }
   &.hidden-xs {
-    padding: 0px 80px;
-    margin-bottom: 20px;
-    @include respond-to(tablet-plus) {
-      padding: 0px 30px 20px 30px;
-    }
-    @include respond-to(large-desktop) {
-      padding: 0px 50px 20px 80px;
-    }
+    margin-bottom: 30px;
   }
 }
+
 #right {
   background: $colour-lightgrey;
   min-height: 1500px; 
   padding: 10px 30px 100px 30px;
   @include respond-to(tablet-plus) {
-    padding: 40px 30px 100px 30px;
+    padding: 93px 40px 100px 40px;
+  }
+  @include respond-to(desktop) {
+    padding: 93px 80px 100px 80px;
   }
 }
 
 .section-title {
-  font-size: 1em;
   margin-top: 40px;
   text-align: center;
   text-transform: uppercase;
